@@ -18,7 +18,7 @@ public class Main {
             TelegramBotsLongPollingApplication botsApplication = new TelegramBotsLongPollingApplication();
             botsApplication.registerBot(botToken, new Bot(botToken));
         } catch (TelegramApiException e) {
-            e.printStackTrace();
+            LOGGER.log(Level.SEVERE, "Failed to start the bot", e);
         }
     }
 
