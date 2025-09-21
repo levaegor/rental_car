@@ -30,4 +30,8 @@ public class Config {
     public static String getDatabasePassword() {
         return Dotenv.load().get("DB_PASSWORD");
     }
+
+    public static String getAdminPassword() {
+        return Dotenv.load().get("ADMIN_PASSWORD");
+    }
 }
